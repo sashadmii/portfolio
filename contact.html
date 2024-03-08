@@ -3,37 +3,71 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type=text/css href=./contact.css>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Italiana&display=swap"
+            rel="stylesheet" />
         <title>Contact</title>
     </head>
     <body>
-        <h1>Contact Me</h1>
-        <ul>
-            <li>
-                <a href="alexandra.rychka@gmail.com" /><img
-                    src="./images/Gmail_icon_(2020).svg.png" />
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/oleksandrarychka/" />
-                <img src="./images/LinkedIn_icon.svg.png" />
-            </li>
-            <li>
-                <a href="https://github.com/sashadmii" /><img
-                    src="./images/Octicons-mark-github.svg" />
-            </li>
-        </ul>
-        <form action="/example.html" method="POST">
-            <label for="name">Name</label>
-            <input id="name" name="first-name" type="text" />
-            <input id="name" name="last-name" type="text" />
+        <header>
+            <nav>
+                <h1 class="left">Oleksandra Rychka</h1>
+                <div class="right">
+                    <a href="./home.html">Home</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <h1 class="top">Contact Me</h1>
 
-            <label for="email">Email</label>
-            <input id="'email" name="email" type="text" />
+            <section class="links">
+                <a href="alexandra.rychka@gmail.com"
+                    ><img
+                        src="./images/Gmail_icon_(2020).svg.png"
+                        class="soc-icon"
+                /></a>
 
-            <label for="subject">Subject</label>
-            <input id="subject" name="subject" type="text" />
+                <a href="https://www.linkedin.com/in/oleksandrarychka/">
+                    <img src="./images/LinkedIn_icon.svg.png" class="soc-icon"
+                /></a>
 
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" cols="10"></textarea>
-        </form>
+                <a href="https://github.com/sashadmii"
+                    ><img
+                        src="./images/Octicons-mark-github.svg"
+                        class="soc-icon"
+                /></a>
+            </section>
+
+            <form action="/contact.html" method="POST">
+                <label for="name">Name</label>
+                <input
+                    id="name"
+                    name="first-name"
+                    type="text"
+                    placeholder="First name" />
+                <input
+                    id="name"
+                    name="last-name"
+                    type="text"
+                    placeholder="Last name" />
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text" />
+
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" />
+
+                <label for="message">Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    cols="10"></textarea>
+            </form>
+        </main>
     </body>
 </html>

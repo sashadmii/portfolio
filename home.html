@@ -3,67 +3,90 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type=text/css href=./home.css>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Italiana&display=swap"
+            rel="stylesheet" />
         <title>Sasha_Dmii Portfolio</title>
     </head>
     <body>
         <header>
-            <h1>Oleksandra Rychka</h1>
+            <h1 class="top">Oleksandra Rychka</h1>
             <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Contact</li>
-                </ul>
+                <a href="./home.html">Home</a>
+                <a href="./contact.html">Contact</a>
             </nav>
         </header>
         <main>
-            <section>
-                <img src="./images/IMG_1304.JPEG" />
-                <h2>Let's make your ideas work</h2>
-                <p>
-                    My name is Oleksandra and I'm a frontend developer from
-                    Valencia, Spain. Recently I've finished Codecademy courses
-                    and now I'm ready for new projects and challenges!
-                </p>
+            <section class="about">
+                <section class="text">
+                    <h3 class="slogan">Let's make your ideas work</h3>
+                    <p>
+                        My name is Oleksandra and I'm a frontend developer from
+                        Valencia, Spain. Recently I've finished Codecademy
+                        courses and now I'm ready for new projects and
+                        challenges!
+                    </p>
+                </section>
+                <img src="./images/IMG_1304.JPEG" class="photo" />
             </section>
-            <section>
-                <h2>Projects</h2>
 
-                <img src="./images/2.jpeg" />
-                <h3>Tiny Paws Pajamas</h3>
-                <p>A website for a pajamas brand.</p>
+            <h2>Projects</h2>
 
-                <img src="./images/cos_the_cat_1.JPG" />
-                <h3>Cos the Cat</h3>
-                <p>Website forr the cutest ct in the world</p>
+            <section class="projects">
+                <section class="project">
+                    <img src="./images/2.jpeg" class="project-img" />
+                    <h3>Tiny Paws Pajamas</h3>
+                    <p>A website for a pajamas brand.</p>
+                </section>
+
+                <section class="project">
+                    <img src="./images/cos_the_cat_1.JPG" class="project-img" />
+                    <h3>Cos the Cat</h3>
+                    <p>Website for the cutest cat in the world</p>
+                </section>
             </section>
-            <section>
-                <h2>Skills</h2>
-                <img src="./images/1200px-HTML5_Badge.svg.png/" />
-                <img src="./images/CSS3_logo.svg.png" />
-                <img src="./images/javascript-logo.svg" />
-                <img src="./images/visual-studio-code-1.svg" />
-                <img src="./images/Git_icon.svg.png" />
-                <img src="./images/Octicons-mark-github.svg" />
+
+            <h2>Skills</h2>
+            <section class="skills">
+                <img src="./images/1200px-HTML5_Badge.svg.png" class="icon" />
+                <img src="./images/CSS3_logo.svg.png" class="icon" />
+                <img src="./images/javascript-logo.svg" class="icon" />
+                <img src="./images/visual-studio-code-1.svg" class="icon" />
+                <img src="./images/Git_icon.svg.png" class="icon" />
+                <img src="./images/Octicons-mark-github.svg" class="icon" />
             </section>
         </main>
+        <h2>Get in Touch</h2>
         <footer>
-            <h3>Location</h3>
-            <p>Valencia, Spain</p>
-            <h3>Contact Me</h3>
-            <ul>
-                <li>
-                    <a href="alexandra.rychka@gmail.com" /><img
-                        src="./images/Gmail_icon_(2020).svg.png" />
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/oleksandrarychka/" />
-                    <img src="./images/LinkedIn_icon.svg.png" />
-                </li>
-                <li>
-                    <a href="https://github.com/sashadmii" /><img
-                        src="./images/Octicons-mark-github.svg" />
-                </li>
-            </ul>
+            <section class="left">
+                <h3>Location</h3>
+                <p>Valencia, Spain</p>
+            </section>
+            <section class="right">
+                <h3>Contact Me</h3>
+                <section class="social">
+                    <a href="alexandra.rychka@gmail.com"
+                        ><img
+                            src="./images/Gmail_icon_(2020).svg.png"
+                            class="soc-icon"
+                    /></a>
+
+                    <a href="https://www.linkedin.com/in/oleksandrarychka/"
+                        ><img
+                            src="./images/LinkedIn_icon.svg.png"
+                            class="soc-icon"
+                    /></a>
+
+                    <a href="https://github.com/sashadmii"
+                        ><img
+                            src="./images/Octicons-mark-github.svg"
+                            class="soc-icon"
+                    /></a>
+                </section>
+            </section>
         </footer>
     </body>
 </html>

@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #ffe8ba;
+    font-family: 'Cormorant Garamond', serif;
+    color: #251605;
+}
+
+nav {
+    text-align: center;
+    padding-top: 1.25em;
+}
+
+section {
+    margin: 2.5em;
+}
+
+img {
+    width: 18.75em;
+}
+
+a {
+    display: inline-flex;
+    width: 100px;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+/* mouse over link */
+a:hover {
+    color: #987d7c;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Italiana', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.875em;
+}
+
+h3 {
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+.top {
+    font-size: 2.5em;
+    padding-top: 1.25em;
+}
+
+.about,
+.projects {
+    display: flex;
+    justify-content: center;
+}
+
+.photo {
+    display: inline-flex;
+    width: 25em;
+}
+
+.text {
+    display: inline-flex;
+    flex-direction: column;
+    width: 25em;
+    padding-right: 3.125em;
+    margin: 0;
+}
+
+.slogan {
+    padding-bottom: 1.25em;
+}
+
+.projects {
+    margin: 0;
+}
+
+.project {
+    display: inline-flex;
+    width: 45%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-img {
+    width: 90%;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon {
+    width: 9em;
+}
+
+footer {
+    display: flex;
+    margin: 2.5em;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin: 0.5em;
+}
+
+.soc-icon {
+    width: 3em;
+}
+
+.left {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    margin: 1.5em;
+}
+
+.right {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    margin: 1.5em;
+}

@@ -48,10 +48,12 @@ h2 {
 h3 {
     font-size: 1.5em;
     padding-bottom: 0.5em;
+    background-color: transparent;
 }
 
 p {
     font-size: 1.3em;
+    background-color: transparent;
 }
 
 .top {
@@ -88,13 +90,36 @@ p {
 
 .project {
     display: inline-flex;
-    width: 45%;
+    width: 100%;
     flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+div {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
     align-items: center;
 }
 
+.overlay {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
 .project-img {
-    width: 90%;
+    width: 100%;
+    height: auto;
 }
 
 .skills {
@@ -135,4 +160,53 @@ footer {
     align-items: flex-end;
     width: 50%;
     margin: 1.5em;
+}
+
+@media only screen and (max-width: 750px) {
+    body {
+        font-size: 0.75em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        padding-bottom: 1em;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .overlay {
+        visibility: visible;
+}
+
+@media only screen and (max-width: 880px) {
+    .icon,
+    .soc-icon {
+        width: 3em;
+    }
+
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+    .left,
+    .right {
+        display: flex;
+        align-items: center;
+    }
 }
